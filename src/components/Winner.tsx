@@ -1,5 +1,5 @@
 const Winner = ({winner,reset}) => {
-    return <p>player {winner} has won
+    return <p>Player {winner} has won
 
             <button onClick={reset}>Play Again</button>
             </p>

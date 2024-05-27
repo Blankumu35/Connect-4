@@ -32,11 +32,11 @@ const DropZone = () => {
                     player1.find(m => x === m.x + 3 && y ===m.y - 3)
                     )
                     setWinner(1)
-            }
+            })
 
 
 
-                    const player2 =dropped.filter(d => d.player === 1)
+                const player2 =dropped.filter(d => d.player === 2)
                     player2.forEach(({x,y}) => {
                 if (player2.find(m => x === m.x + 1 && y ===m.y) &&
                     player2.find(m => x === m.x + 2 && y ===m.y) &&
