@@ -2,9 +2,110 @@
   --size: 100px;
   --p1:#ec0b07;
   --p2: rgb(215, 215, 38);
+  
 }
 
-.App {
-  display: grid;
-  place-content: center;
+.app {
+  display: block;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(135deg, #4043ff, #ff80ab);
+
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(135deg, #4043ff, #ff80ab);
+  color: white;
+  text-align: center;
+}
+
+.menu-title {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.menu-buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-button {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  color: #ff4081;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.menu-button:hover {
+  background-color: #ff4081;
+  color: white;
+}
+
+
+.p1, .p2 {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.p1 {
+  background-color: red;
+}
+
+.p2 {
+  background-color: yellow;
+}
+
+.winner-overlay{
+  position: absolute;
+  left: -58%;
+  background-color: rgba(9, 9, 16, 0.7);
+  z-index: 0;
+}
+
+.winner-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 40px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  z-index: 20;
+}
+
+.winner-popup .popup-content {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+
+}
+
+.winner-popup button {
+  margin-top: 40px;
+  font-size: 16px;
+  padding: 1rem 0.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+
+}
+.winner-popup button:hover {
+ background-color: #ff4081;
+  color: white;
 }
